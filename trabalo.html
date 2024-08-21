@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las fijas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiIGZpbGw9IiNFNkZBMDAiLz4KPGNpcmNsZSBjeD0iMTQuNSIgY3k9IjE3LjUiIHI9IjcuNSIgZmlsbD0id2hpdGUiLz4KPGVsbGlwc2UgY3g9IjE3IiBjeT0iMTguNSIgcng9IjUiIHJ5PSI1LjUiIGZpbGw9ImJsYWNrIi8+CjxjaXJjbGUgY3g9IjM2LjUiIGN5PSIxNy41IiByPSI3LjUiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjM4LjUiIGN5PSIxOC41IiByPSI1LjUiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05IDMySDQxVjMyQzQxIDM4LjA3NTEgMzYuMDc1MSA0MyAzMCA0M0gyMEMxMy45MjQ5IDQzIDkgMzguMDc1MSA5IDMyVjMyWiIgZmlsbD0iYmxhY2siLz4KPHJlY3QgeD0iMTQiIHk9IjMyIiB3aWR0aD0iNiIgaGVpZ2h0PSI1IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+  <style>
+    :root {
+      --base-bg: rgb(0, 0, 0);   /* Color de fondo */
+      --text-color: azure;       /* Color del texto */
+      --click-bg: #008a39;       /* Color al hacer clic */
+      --search-hue: 230;           /* Purpura 250, verde 142, azul 230, rosado 340*/
+    }
+    *{box-sizing:border-box;color:var(--text-color);font-family:"Verdana",sans-serif}body{background-color:var(--base-bg)}table{border-collapse:collapse;margin-bottom:10px;max-width:500px}th,td{padding:10px;border:1px solid var(--text-color)}td:hover{background-color:var(--click-bg)}article{display:grid;gap:10px;grid-template-columns:1fr}@media (min-width: 501px){article{grid-template-columns:repeat(2,1fr)}}@media (min-width: 721px){article{grid-template-columns:repeat(3,1fr)}}@media (min-width: 1025px){article{grid-template-columns:repeat(4,1fr)}}#search-container{position:relative}#search-input{width:100%;padding:10px;border:1px solid var(--text-color);background-color:var(--base-bg)}#search-results{list-style-type:none;padding:0;position:absolute;width:100%;background-color:hsl(var(--search-hue),30%,30%);border:1px solid var(--text-color);display:none}#search-results li.selected,#search-results li:hover{background-color:var(--click-bg);color:var(--base-bg)}#search-results a{padding:10px;color:var(--text-color);text-decoration:none;display:block}details{margin:10px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+      <ul id="search-results"></ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <details open>
+        <summary>Acceso remoto</summary>
+        <article>
+          <table>
+            <tr>
+              <th colspan="4">PC de Vlady</th>
+            </tr>
+            <tr>
+              <td>222.222.222.22</td>
+              <td>Brigitte</td>
+              <td>brigitteadmin</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>222.222.222.22</td>
+              <td>Brigitte</td>
+              <td>nicol</td>
+              <td>fseghese4185</td>
+            </tr>
+          </table>
+        </article>
+      </details>
+      <details open>
+        <summary>Correos de la empresa</summary>
+        <article>
+          <table>
+            <tr>
+              <th colspan="2">Equipo de Soporte TI</th>
+            </tr>
+            <tr>
+              <td>joseluis@asino.pe</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>matusalen@asino.pe</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>mariaadmin@asino.pe</td>
+              <td>blablabla</td>
+            </tr>
+            <tr>
+              <td>pepeluchon@asino.pe</td>
+              <td>pipipipi</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">OEI</th>
+            </tr>
+            <tr>
+              <td>joseluis@asino.pe</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>pepeluchon@asino.pe</td>
+              <td>pipipipi</td>
+            </tr>
+            <tr>
+              <td>airedejah@asino.pe</td>
+              <td>makanaki</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">EQUIPO COBRA</th>
+            </tr>
+            <tr>
+              <td>JoseLuis</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>Matusalen</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>MariaAdmin</td>
+              <td>blablabla</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">EQUIPO LEONES</th>
+            </tr>
+            <tr>
+              <td>JoseLuis</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>Matusalen</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>MariaAdmin</td>
+              <td>blablabla</td>
+            </tr>
+          </table>
+        </article>
+      </details>
+      <details open>
+        <summary>Instagram</summary>
+        <article>
+          <table>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+            <tr>
+              <td>123@gmail.com</td>
+              <td>aaaaaaaa</td>
+            </tr>
+          </table>
+        </article>
+      </details>
+      <details open>
+        <summary>Servidores locales y externos</summary>
+        <article>
+          <table>
+            <tr>
+              <th colspan="3">SQL server Martita</th>
+            </tr>
+            <tr>
+              <td>445.455.455.0</td>
+              <td>JoseLuis</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>BABILONIA</td>
+              <td>Matusalen</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>8.8.8.0</td>
+              <td>MariaAdmin</td>
+              <td>blablabla</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="3">SQL server Jacinta</th>
+            </tr>
+            <tr>
+              <td>445.455.455.0</td>
+              <td>JoseLuis</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>BABILONIA</td>
+              <td>Matusalen</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>8.8.8.0</td>
+              <td>MariaAdmin</td>
+              <td>blablabla</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">Proyecto Pepe Lucho</th>
+            </tr>
+            <tr>
+              <td>JoseLuis</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>Matusalen</td>
+              <td>lalalala</td>
+            </tr>
+            <tr>
+              <td>MariaAdmin</td>
+              <td>blablabla</td>
+            </tr>
+          </table>
+        </article>
+      </details>
+      <details open>
+        <summary>Correo personal</summary>
+        <article>
+          <table>
+            <tr>
+              <th colspan="2">Google</th>
+            </tr>
+            <tr>
+              <td>JoseLuis@gmail.com</td>
+              <td>fseghese</td>
+            </tr>
+            <tr>
+              <td>Matusalen@gmai.com</td>
+              <td>lalalala</td>
+            </tr>
+          </table>
+        </article>
+      </details>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '}') {
+        event.preventDefault();
+        document.getElementById('search-input').focus();
+      }
+    });
+    document.querySelectorAll('td').forEach(cell => {
+      cell.addEventListener('click', function() {
+        const range = document.createRange();
+        range.selectNodeContents(this);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        try {
+          document.execCommand('copy');
+        } catch (err) {
+          console.error('Error al copiar el contenido:', err);
+        } finally {
+          sel.removeAllRanges();
+        }
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      let selectedIndex = -1;
+      searchInput.addEventListener('input', function() {
+        const query = searchInput.value.toLowerCase();
+        searchResults.innerHTML = '';
+        if (query) {
+          let found = false;
+          document.querySelectorAll('summary').forEach(summary => {
+            if (summary.textContent.toLowerCase().includes(query)) {
+              found = true;
+              const li = document.createElement('li');
+              li.innerHTML = `<a href="#${summary.id}">${summary.textContent}</a>`;
+              searchResults.appendChild(li);
+            }
+          });
+          document.querySelectorAll('table th').forEach(th => {
+            if (th.textContent.toLowerCase().includes(query)) {
+              found = true;
+              const li = document.createElement('li');
+              li.innerHTML = `<a href="#${th.id}">${th.textContent}</a>`;
+              searchResults.appendChild(li);
+            }
+          });
+          searchResults.style.display = found ? 'block' : 'none';
+        } else {
+          searchResults.style.display = 'none';
+        }
+      });
+      searchInput.addEventListener('keydown', function(e) {
+        const items = searchResults.querySelectorAll('li');
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (selectedIndex < items.length - 1) {
+            selectedIndex++;
+            updateSelected();
+          }
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (selectedIndex > 0) {
+            selectedIndex--;
+            updateSelected();
+          }
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (selectedIndex >= 0 && selectedIndex < items.length) {
+            window.location.href = items[selectedIndex].querySelector('a').href;
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+            searchResults.style.display = 'none';
+          }
+        }
+      });
+      function updateSelected() {
+        const items = searchResults.querySelectorAll('li');
+        items.forEach((item, index) => {
+          item.classList.toggle('selected', index === selectedIndex);
+        });
+      }
+      document.querySelectorAll('summary').forEach((summary, index) => {
+        summary.id = `summary-${index}`;
+      });
+      document.querySelectorAll('table th').forEach((th, index) => {
+        th.id = `header-${index}`;
+      });
+      searchResults.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+          searchResults.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
